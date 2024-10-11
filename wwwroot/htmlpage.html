@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Processing UI -</title>
+    <script>
+       
+        async function uploadFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+
+            const response = await fetch('/api/data/UploadFileToBlobStorage', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                alert('File uploaded successfully');
+            } else {
+                alert('Failed to upload file. Please check if the file is already uploaded to blob.');
+            }
+        }
+       
+        //write a function to get the stats
+        async function getStats() {
+            const fileName = document.getElementById('FileName').value;
+            const date = document.getElementById('Date').value;
+            const meter = document.getElementById('Meter').value;
+            const dataType = document.getElementById('DataType').value;
+
+            const response = await fetch(`/api/data/GetAggregatedResult?fileName=${fileName}&date=${date}&meter=${meter}&dataType=${dataType}`);
+            const stats = await response.json();
+            const statsElement = document.getElementById('stats');
+            statsElement.textContent = `Stats: Min = ${stats.min}, Max = ${stats.max}, Median = ${stats.median}`;
+            statsElement.style.color = 'green';
+        }
+
+
+        async function listBlobs() {
+            const response = await fetch('/api/data/GetAllBlobFiles');
+            const blobs = await response.json();
+            //alert(`Blobs in storage: ${blobs.join(', ')}`);
+            const blobsElement = document.getElementById('blobs');
+            blobsElement.textContent = `Blobs in storage: ${blobs.join(', ')}`;
+            blobsElement.style.color = 'blue';
+        }
+    </script>
+</head>
+<body>
+    <h1>Data Processing UI</h1>
+
+    <h2>Upload File</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload File</button>
+
+    <h2>List Blobs</h2>
+    <button onclick="listBlobs()">Show Blob files</button>
+    <div id="blobs" style="margin-top: 10px;"></div>
+
+
+    <h2>Enter below details to get aggregated result</h2>
+    <input type="text" id="FileName" placeholder="File Name" />
+    <input type="date" id="Date" placeholder="Date (yyyy-mm-dd)" />
+    <input type="text" id="Meter" placeholder="Meter" />
+    <input type="text" id="DataType" placeholder="Data Type" />
+    <button onclick="getStats()">Submit</button>
+    <div id="stats" style="margin-top: 10px;"></div>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>API Test</h1>
+    <h2>Upload File</h2>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="fileInput" />
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Get Tou Stats</h2>
+    <form id="getTouStatsForm">
+        <label for="touFileName">File Name:</label>
+        <input type="text" id="touFileName" />
+        <br />
+        <label for="touDate">Date:</label>
+        <input type="date" id="touDate" placeholder="Date (yyyy-mm-dd)" />
+        <br />
+        <label for="touMeter">Meter:</label>
+        <input type="text" id="touMeter" />
+        <br />
+        <label for="touDataType">Data Type:</label>
+        <input type="text" id="touDataType" />
+        <br />
+        <button type="submit">Get Stats</button>
+    </form>
+
+    <h2>Get Lp Stats</h2>
+    <form id="getLpStatsForm">
+        <label for="lpFileName">File Name:</label>
+        <input type="text" id="lpFileName" />
+        <br />
+        <label for="lpDate">Date:</label>
+        <input type="date" id="lpDate" placeholder="Date (yyyy-mm-dd)" />
+        <br />
+        <label for="lpMeter">Meter:</label>
+        <input type="text" id="lpMeter" />
+        <br />
+        <label for="lpDataType">Data Type:</label>
+        <input type="text" id="lpDataType" />
+        <br />
+        <button type="submit">Get Stats</button>
+    </form>
+
+    <h2>Get Stats</h2>
+    <form id="getStatsForm">
+        <label for="statsFileName">File Name:</label>
+        <input type="text" id="statsFileName" />
+        <br />
+        <label for="statsDate">Date:</label>
+        <input type="text" id="statsDate" />
+        <br />
+        <label for="statsMeter">Meter:</label>
+        <input type="text" id="statsMeter" />
+        <br />
+        <label for="statsDataType">Data Type:</label>
+        <input type="text" id="statsDataType" />
+        <br />
+        <button type="submit">Get Stats</button>
+    </form>
+
+    <h2>List Blobs</h2>
+    <button id="listBlobsButton">List Blobs</button>
+
+    <script>
+        $(document).ready(function () {
+            // Upload File
+            $("#uploadForm").submit(function (event) {
+                event.preventDefault();
+                var formData = new FormData();
+                formData.append("file", $("#fileInput")[0].files[0]);
+
+                $.ajax({
+                    url: "/api/Data/upload",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        console.log(response);
+                        alert("File uploaded successfully. Blob URL: " + response.BlobUrl);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                        alert("Error uploading file: " + xhr.responseText);
+                    }
+                });
+            });
+
+            // Get Tou Stats
+            $("#getTouStatsForm").submit(function (event) {
+                event.preventDefault();
+                var fileName = $("#touFileName").val();
+                var date = $("#touDate").val();
+                var meter = $("#touMeter").val();
+                var dataType = $("#touDataType").val();
+                console.log(date);
+                $.ajax({
+                    url: "/api/Data/tou/stats/" + fileName + "?date=" + date + "&meter=" + meter + "&dataType=" + dataType,
+                    type: "GET",
+                    success: function (response) {
+                        console.log(response);
+                        alert("Tou Stats: Min = " + response.min + ", Max = " + response.max + ", Median = " + response.median);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                        alert("Error getting Tou stats: " + xhr.responseText);
+                    }
+                });
+            });
+
+            // Get Lp Stats
+            $("#getLpStatsForm").submit(function (event) {
+                event.preventDefault();
+                var fileName = $("#lpFileName").val();
+                var date = $("#lpDate").val();
+                console.log(date);
+                var meter = $("#lpMeter").val();
+                var dataType = $("#lpDataType").val();
+
+                $.ajax({
+                    url: "/api/Data/lp/stats/" + fileName + "?date=" + date + "&meter=" + meter + "&dataType=" + dataType,
+                    type: "GET",
+                    success: function (response) {
+                        console.log(response);
+                        alert("Lp Stats: Min = " + response.min + ", Max = " + response.max + ", Median = " + response.median);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                        alert("Error getting Lp stats: " + xhr.responseText);
+                    }
+                });
+            });
+
+            // Get Stats
+            $("#getStatsForm").submit(function (event) {
+                event.preventDefault();
+                var fileName = $("#statsFileName").val();
+                var date = $("#statsDate").val();
+                var meter = $("#statsMeter").val();
+                var dataType = $("#statsDataType").val();
+
+                $.ajax({
+                    url: "/api/Data/stats/" + fileName + "?date=" + date + "&meter=" + meter + "&dataType=" + dataType,
+                    type: "GET",
+                    success: function (response) {
+                        console.log(response);
+                        alert("Stats: Min = " + response.min + ", Max = " + response.max + ", Median = " + response.median);
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                        alert("Error getting stats: " + xhr.responseText);
+                    }
+                });
+            });
+
+            // List Blobs
+            $("#listBlobsButton").click(function () {
+                $.ajax({
+                    url: "/api/Data/blobs",
+                    type: "GET",
+                    success: function (response) {
+                        console.log(response);
+                        alert("Blobs: " + response.join(", "));
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(xhr.responseText);
+                        alert("Error listing blobs: " + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

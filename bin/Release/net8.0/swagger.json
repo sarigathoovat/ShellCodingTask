@@ -1,0 +1,77 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "ShellCodingTask, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Data/UploadFileToBlobStorage": {
+      "post": {
+        "tags": [
+          "Data"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "file",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Data/GetAllBlobFiles": {
+      "get": {
+        "tags": [
+          "Data"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Data/GetAggregatedResult": {
+      "get": {
+        "tags": [
+          "Data"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "fileName",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "date",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "meter",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "dataType",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}

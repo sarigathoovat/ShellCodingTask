@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShellCodingTask3.props" />
+</Project>

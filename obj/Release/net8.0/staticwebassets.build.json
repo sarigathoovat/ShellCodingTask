@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "YSuNS55VaDonbgSPsjPi0uY78JNVgLGV2E7lnhP5un0=",
+  "Source": "ShellCodingTask",
+  "BasePath": "_content/ShellCodingTask",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ShellCodingTask\\wwwroot",
+      "Source": "ShellCodingTask",
+      "ContentRoot": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\",
+      "BasePath": "_content/ShellCodingTask",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\htmlpage.html",
+      "SourceId": "ShellCodingTask",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\",
+      "BasePath": "_content/ShellCodingTask",
+      "RelativePath": "htmlpage.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\htmlpage.html"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\wwwroot\\htmlpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:wwwroot\\htmlpage.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\models\\toudata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:models\\toudata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\services\\dataprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:services\\dataprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\services\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:services\\datetimeconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|c:\\users\\soora\\source\\repos\\shellcodingtask3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E871F44C-39EB-4491-B3CC-CFBA2537C654}|ShellCodingTask.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Models\\LpDataMap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\LpDataMap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:wwwroot\\test.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "htmlpage.html",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\htmlpage.html",
+              "RelativeDocumentMoniker": "wwwroot\\htmlpage.html",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\htmlpage.html",
+              "RelativeToolTip": "wwwroot\\htmlpage.html",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACEAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-11T07:37:40.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-11T07:21:45.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataProcessingService.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Services\\DataProcessingService.cs",
+              "RelativeDocumentMoniker": "Services\\DataProcessingService.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Services\\DataProcessingService.cs",
+              "RelativeToolTip": "Services\\DataProcessingService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T04:22:25.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TouData.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Models\\TouData.cs",
+              "RelativeDocumentMoniker": "Models\\TouData.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Models\\TouData.cs",
+              "RelativeToolTip": "Models\\TouData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T07:40:14.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataController.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Controllers\\DataController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DataController.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Controllers\\DataController.cs",
+              "RelativeToolTip": "Controllers\\DataController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwDEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T01:18:25.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DateTimeConverter.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Services\\DateTimeConverter.cs",
+              "RelativeDocumentMoniker": "Services\\DateTimeConverter.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Services\\DateTimeConverter.cs",
+              "RelativeToolTip": "Services\\DateTimeConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T03:39:46.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T04:34:35.95Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LpDataMap.cs",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Models\\LpDataMap.cs",
+              "RelativeDocumentMoniker": "Models\\LpDataMap.cs",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\Models\\LpDataMap.cs",
+              "RelativeToolTip": "Models\\LpDataMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T06:14:02.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "test.html",
+              "DocumentMoniker": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\test.html",
+              "RelativeDocumentMoniker": "wwwroot\\test.html",
+              "ToolTip": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\test.html",
+              "RelativeToolTip": "wwwroot\\test.html",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwJcAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-10-11T05:16:02.919Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\soora\\source\\repos\\ShellCodingTask3\\wwwroot\\htmlpage.html",
+      "PackagePath": "staticwebassets\\htmlpage.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ShellCodingTask.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ShellCodingTask.props",
+      "PackagePath": "build\\ShellCodingTask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ShellCodingTask.props",
+      "PackagePath": "buildMultiTargeting\\ShellCodingTask.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ShellCodingTask.props",
+      "PackagePath": "buildTransitive\\ShellCodingTask.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
